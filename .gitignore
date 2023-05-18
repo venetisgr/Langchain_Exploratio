@@ -2,3 +2,13 @@
 /.ipynb_checkpoints
 /__pycache__
 /key_storage.py
+agents/__pycache__/__init__.cpython-311.pyc
+agents/__pycache__/linkedin_lookup_agent.cpython-311.pyc
+.gitignore
+tools/__pycache__/__init__.cpython-311.pyc
+tools/__pycache__/tools.cpython-311.pyc
+utils/__pycache__/__init__.cpython-311.pyc
+.gitignore
+utils/__pycache__/linkedin_info_extract.cpython-311.pyc
+utils/__pycache__/linkedin.cpython-311.pyc
+utils/.DS_Store
