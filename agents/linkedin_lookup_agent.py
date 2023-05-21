@@ -16,8 +16,8 @@ def linkedin_url_lookup(name: str, occupation:str=None) -> str:
 
     if occupation==None:
         
-        template = """given the full name {name_of_person} I want you to get it me a link to their Linkedin profile page.
-                          Your answer should contain only a URL"""
+        template = """given the full name {name_of_person} I want you to get it me a URL to their Linkedin profile page.
+                          Your answer should contain only a URL. If you cannot find the URL return "not found". """
         tools_for_agent1 = [
             Tool(
                 name="Crawl Google for linkedin profile page",
@@ -33,8 +33,8 @@ def linkedin_url_lookup(name: str, occupation:str=None) -> str:
 
     else:
 
-        template = """given the full name {name_of_person} and occupation {occupation} I want you to get it me a link to their Linkedin profile page.
-                          Your answer should contain only a URL"""
+        template = """given the full name {name_of_person} and occupation {occupation} I want you to get it me a URL to their Linkedin profile page.
+                          Your answer should contain only a URL. If you cannot find the URL return "not found". """
         tools_for_agent1 = [
             Tool(
                 name="Crawl Google for linkedin profile page",

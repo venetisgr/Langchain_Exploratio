@@ -180,5 +180,11 @@ class CustomSerpAPIWrapper(BaseModel):#made changes to langchain wrapper in orde
 def get_linkedin_profile_url(name_occupation: str):
     """Searches for the Linkedin Profile Page, for a given name and possibly occupation in the function call."""
     search = CustomSerpAPIWrapper(serpapi_api_key=key_dict["SERPAPI_API_KEY"])
-    res = search.run(f"Linkedin {name_occupation}")
+    try:
+        res = search.run(f"Linkedin {name_occupation}")
+    except ValueError as e:  
+        print("SerpApi problem")
+        print ('error type: ', e)
+        return "not found"
+    
     return res

@@ -12,3 +12,4 @@ utils/__pycache__/__init__.cpython-311.pyc
 utils/__pycache__/linkedin_info_extract.cpython-311.pyc
 utils/__pycache__/linkedin.cpython-311.pyc
 utils/.DS_Store
+utils/__pycache__/output_parsers.cpython-311.pyc
